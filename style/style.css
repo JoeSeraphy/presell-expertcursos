@@ -1,0 +1,142 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .logo {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.container .title {
+  font-size: 32px;
+  color: #494949;
+  padding: 0 16px;
+}
+
+.container .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+.container .flex .card1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #494949;
+  margin: 0 auto;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+.container .flex .card1 .text {
+  font-size: 22px;
+  width: 320px;
+}
+.container .flex .card1 .text2 {
+  font-size: 18px;
+  width: 320px;
+  padding-top: 16px;
+  margin-bottom: 28px;
+}
+.container .flex .card2 .text {
+  font-size: 22px;
+  width: 320px;
+  margin: 0 auto;
+}
+.container .flex .card2 .text2 {
+  font-size: 18px;
+  width: 320px;
+  padding-top: 16px;
+  margin-bottom: 28px;
+}
+
+.container .flex .card1 .excel {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.container .flex .card2 {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #494949;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #ffff;
+}
+
+.container .flex .card2 .pacote {
+  margin: 0 auto;
+}
+
+.description {
+  background-color: #494949;
+  color: #ffff;
+  border-radius: 10px;
+  padding: 14px 16px 0px;
+  height: 270px;
+}
+
+.button {
+  background-color: #11edc8;
+  padding: 14px 38px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #494949;
+  font-weight: 600;
+}
+
+.description p span {
+  color: #ec1c24;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #494949;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 46px 16px;
+}
+
+footer img {
+  width: 300px;
+  margin: 0 auto;
+}
+
+footer span {
+  color: #ffff;
+  text-align: center;
+}
+
+@media (max-width: 426px) {
+  .container .title {
+    text-align: center;
+  }
+  .container .flex {
+    display: grid;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .container .flex .card1 .excel {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .container .flex .card2 .pacote {
+    width: 240px;
+    margin: 0 auto;
+  }
+}
