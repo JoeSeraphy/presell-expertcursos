@@ -3,8 +3,6 @@ body {
 }
 
 .container {
-  max-width: 1024px;
-  margin: 0 auto;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -19,72 +17,66 @@ body {
   font-size: 32px;
   color: #494949;
   padding: 0 16px;
+  text-align: center;
 }
 
 .container .flex {
+  max-width: 1024px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px 16px;
-}
-
-.container .flex .card1 {
-  display: grid;
+  gap: 16px;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  border: 2px solid #494949;
-  margin: 0 auto;
-  background-color: #ffff;
-  border-radius: 10px;
-}
-.container .flex .card1 .text {
-  font-size: 22px;
-  width: 320px;
-}
-.container .flex .card1 .text2 {
-  font-size: 18px;
-  width: 320px;
-  padding-top: 16px;
-  margin-bottom: 28px;
-}
-.container .flex .card2 .text {
-  font-size: 22px;
-  width: 320px;
-  margin: 0 auto;
-}
-.container .flex .card2 .text2 {
-  font-size: 18px;
-  width: 320px;
-  padding-top: 16px;
-  margin-bottom: 28px;
 }
 
-.container .flex .card1 .excel {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.container .flex .card2 {
+.container .flex .card {
   display: grid;
-  align-items: center;
+  justify-content: center;
   text-align: center;
   border: 2px solid #494949;
-  margin: 0 auto;
-  border-radius: 10px;
   background-color: #ffff;
+  border-radius: 10px;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.container .flex .card .text {
+  font-size: 22px;
+  margin: 0 auto;
+}
+.container .flex .card .text2 {
+  font-size: 18px;
+  margin-bottom: 32px;
 }
 
-.container .flex .card2 .pacote {
+.container .flex .card .excel {
+  width: 80%;
   margin: 0 auto;
+  padding: 8px;
+}
+
+.container .flex .card .pacote {
+  width: 76%;
+  margin: 0 auto;
+  padding: 8px;
+}
+.container .flex .card .powerbi {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+}
+.container .flex .card .excelpowerbi {
+  width: 90%;
+  margin: 0 auto;
+  padding: 8px;
 }
 
 .description {
   background-color: #494949;
   color: #ffff;
   border-radius: 10px;
-  padding: 14px 16px 0px;
-  height: 270px;
+  padding: 8px;
+  height: 300px;
 }
 
 .button {
@@ -120,23 +112,36 @@ footer span {
   color: #ffff;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .container .flex {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
 
 @media (max-width: 426px) {
   .container .title {
     text-align: center;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    font-size: 24px;
   }
   .container .flex {
-    display: grid;
+    display: block;
     justify-content: center;
     gap: 16px;
   }
-
-  .container .flex .card1 .excel {
-    width: 240px;
-    margin: 0 auto;
+  .container .flex .card {
+    width: 320px;
   }
-  .container .flex .card2 .pacote {
-    width: 240px;
-    margin: 0 auto;
+  .description {
+    height: 260px;
+  }
+  .button {
+    width: 100%;
+    padding: 14px 64px;
+  }
+  .container .flex .card .text2 {
+    margin-bottom: 62px;
   }
 }
