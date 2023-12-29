@@ -120,11 +120,14 @@ footer span {
 }
 
 @media (max-width: 426px) {
+  .container .logo {
+    width: 186px;
+  }
   .container .title {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     padding: 0 16px;
-    font-size: 24px;
+    font-size: 18px;
   }
   .container .flex {
     display: block;
