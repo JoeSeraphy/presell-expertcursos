@@ -18,6 +18,7 @@ body {
   color: #494949;
   padding: 0 16px;
   text-align: center;
+  margin-top: 64px;
 }
 
 .container .subtitle {
@@ -93,6 +94,7 @@ body {
   text-decoration: none;
   color: #494949;
   font-weight: 600;
+  margin: 124px auto;
 }
 
 .description p span {
@@ -128,7 +130,7 @@ footer span {
 
 @media (max-width: 426px) {
   .container .logo {
-    width: 186px;
+    width: 216px;
   }
   .container .title {
     text-align: center;
@@ -148,8 +150,7 @@ footer span {
     height: 260px;
   }
   .button {
-    width: 100%;
-    padding: 14px 64px;
+    padding: 14px 32px;
   }
   .container .flex .card .text2 {
     margin-bottom: 62px;
