@@ -1,11 +1,21 @@
-body {
+html {
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("/assets/bgexpert.jpg") no-repeat center;
+  background-size: auto;
 }
 
 .container {
   display: grid;
   justify-content: center;
   align-items: center;
+  background: rgba(182, 182, 182, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .container .logo {
@@ -15,10 +25,11 @@ body {
 
 .container .title {
   font-size: 32px;
-  color: #494949;
+  color: #fff;
   padding: 0 16px;
   text-align: center;
   margin-top: 64px;
+  text-shadow: 1px 2px #000;
 }
 
 .container .subtitle {
